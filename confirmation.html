@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="./tailwind.config.js"></script>
+		<title>Confirmation</title>
+	</head>
+	<body
+		class="flex md:justify-center md:items-center md:bg-[#36384d] h-[100vh]"
+	>
+		<main
+			class="flex flex-col justify-between items-center p-6 md:gap-8 bg-white md:m-0 md:h-3/5 md:w-3/6 md:p-14 md:rounded-3xl"
+		>
+			<ul
+				class="h-2/5 flex flex-col justify-evenly mt-28 md:mt-0 md:h-full md:gap-4"
+			>
+				<li><img src="./assets/images/icon-success.svg" alt="" /></li>
+				<li class="text-[#232742] text-4xl font-bold">
+					Thanks for <br />
+					subscribing!
+				</li>
+				<li class="text-[#232742] md:text-base">
+					A confirmation email has been sent to
+					<strong>ash@loremcompany.com</strong>. Please open it and click the
+					button inside to confirm your subscription
+				</li>
+			</ul>
+			<button
+				class="bg-[#232742] text-[#fcffff] w-full p-4 rounded-lg hover:bg-gradient-to-r from-[#fe5278] to-[#ff693e] hover:shadow-2xl md:hover:shadow-[#ff693e]"
+			>
+				Dismiss message
+			</button>
+		</main>
+	</body>
+</html>
+
