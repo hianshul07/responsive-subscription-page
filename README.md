@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Default Page](./output-ss/default-state.png) {width="300px"}
+![Default Page](./output-ss/default-state.png){width="300px"}
 ![Default Page](./output-ss/invalid-email.png)
 ![Default Page](./output-ss/button-hover-state.png)
 ![Default Page](./output-ss/Confirmation.png)
