@@ -30,14 +30,12 @@ Users should be able to:
 ### Screenshot
 
 ![Default Page](./output-ss/default-state.png)
-![Default Page](./output-ss/invalid-email.png)
-![Default Page](./output-ss/button-hover-state.png)
-![Default Page](./output-ss/Confirmation.png)
-<img src="./output-ss/default-mobile-state.png" alt="" width=400px>
-![Default Page](.)
-![Default Page](./output-ss/invalid-email-mobile.png)
-![Default Page](./output-ss/confirmation-mobile.png)
-
+![Invalid email](./output-ss/invalid-email.png)
+![Hover state](./output-ss/button-hover-state.png)
+![Confirmation Page](./output-ss/Confirmation.png)
+<img src="./output-ss/default-mobile-state.png" alt="Default mobile state" width=400px>
+<img src="./output-ss/invalid-email-mobile.png" alt="Invalid email mobile" width=400px>
+<img src="./output-ss/confirmation-mobile.png" alt="confirmation page mobile" width=400px>
 
 ### Links
 
