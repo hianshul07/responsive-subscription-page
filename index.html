@@ -25,10 +25,6 @@
 			.attribution a {
 				color: hsl(228, 45%, 44%);
 			}
-
-			#warning {
-				display: none;
-			}
 		</style>
 	</head>
 	<body
@@ -84,7 +80,7 @@
 					action="confirmation.html"
 					class="flex flex-col w-full justify-between absolute bottom-0 h-[28%] sm:h-56 p-6 sm:static"
 				>
-					<div class="sm:flex justify-between">
+					<div class="flex  justify-between">
 						<label
 							for="email"
 							class="text-sm font-semibold relative top-3 font-[#232742]"
@@ -94,19 +90,19 @@
 						<lable
 							id="warning"
 							for="email"
-							class="text-sm font-semibold relative top-3 sm:text-[#be7f79]"
+							class="text-sm font-semibold relative top-3 text-[#be7f79] hidden"
 							>Valid email required</lable
 						>
 					</div>
 					<input
 						class="border-solid border-[1px] sm:border-2 border-[#c8c8c8] w-full p-4 rounded-lg outline-none focus:border-[#be7f79] focus:bg-[#ffe8e6] focus:text-[#d78683]"
 						type="email"
-						id="email1"
+						id="email"
 						required
 						placeholder="email@company.com"
 					/>
 					<button
-						class="bg-[#232742] text-[#fcffff] w-full p-4 rounded-lg sm:hover:bg-gradient-to-r from-[#fe5278] to-[#ff693e] sm:hover:shadow-2xl sm:hover:shadow-[#ff693e]"
+						class="bg-[#232742] text-[#fcffff] w-full p-4 rounded-lg hover:bg-gradient-to-r from-[#fe5278] to-[#ff693e] hover:shadow-2xl hover:shadow-[#ff693e]"
 						type="submit"
 						id="btn"
 					>
@@ -118,7 +114,7 @@
 
 		<!-- attribution -->
 		<div
-			class="attribution flex absolute justify-center items-center bg-white h-8 w-1/5 bottom-0"
+			class="attribution flex absolute justify-center items-center bg-white sm:h-8 sm:w-2/5 auto bottom-0 gap-x-1"
 		>
 			Challenge by
 			<pre></pre>
