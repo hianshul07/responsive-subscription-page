@@ -18,41 +18,44 @@
 
 		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 		<style>
-			/* .attribution {
+			.attribution {
 				font-size: 11px;
 				text-align: center;
 			}
 			.attribution a {
 				color: hsl(228, 45%, 44%);
-			} */
+			}
+
+			#warning {
+				display: none;
+			}
 		</style>
 	</head>
 	<body
-		class="bg-[#36384d] h-[100vh] md:flex md:justify-center md:items-center"
+		class="bg-[#36384d] h-[100vh] sm:flex sm:justify-center sm:items-center"
 	>
-		<!-- Sign-up form start -->
 		<main
-			class="bg-white h-full md:flex md:flex-row-reverse md:justify-between md:h-fit md:p-8 md:rounded-3xl"
+			class="bg-white h-full sm:flex sm:flex-row-reverse sm:justify-between sm:h-fit sm:p-8 sm:rounded-3xl"
 		>
 			<header class="">
 				<img
 					src="./assets/images/illustration-sign-up-mobile.svg"
 					alt=""
-					class="md:hidden"
+					class="sm:hidden w-full"
 				/>
 				<img
 					src="./assets/images/illustration-sign-up-desktop.svg"
 					alt=""
-					class="hidden md:block max-h-full"
+					class="hidden sm:block max-h-full"
 				/>
 			</header>
-			<div class="md:flex md:flex-col md:justify-center md:w-3/6 md:h-full">
+			<div class="sm:flex sm:flex-col sm:justify-center sm:w-3/6 sm:h-full">
 				<section
 					class="flex flex-col justify-between text-[#232742] h-2/5 p-6 gap-8"
 				>
-					<h1 class="text-4xl md:text-6xl font-bold">Stay updated!</h1>
+					<h1 class="text-4xl sm:text-6xl font-bold">Stay updated!</h1>
 					<p>Join 60,000+ product managers receiving monthly updates on:</p>
-					<ul class="flex flex-col gap-2 md:gap-4">
+					<ul class="flex flex-col gap-2 sm:gap-4">
 						<li class="flex gap-4">
 							<img
 								src="./assets/images/icon-list.svg"
@@ -73,12 +76,15 @@
 						</li>
 					</ul>
 				</section>
+
+				<!-- form for confirmation of newslette -->
 				<form
+				novalidate
 					id="email-form"
 					action="confirmation.html"
-					class="flex flex-col w-full justify-between absolute bottom-0 h-[28%] md:h-56 p-6 md:static"
+					class="flex flex-col w-full justify-between absolute bottom-0 h-[28%] sm:h-56 p-6 sm:static"
 				>
-					<div class="md:flex justify-between">
+					<div class="sm:flex justify-between">
 						<label
 							for="email"
 							class="text-sm font-semibold relative top-3 font-[#232742]"
@@ -88,19 +94,19 @@
 						<lable
 							id="warning"
 							for="email"
-							class="text-sm font-semibold relative top-3 md:text-[#be7f79] hidden"
+							class="text-sm font-semibold relative top-3 sm:text-[#be7f79]"
 							>Valid email required</lable
 						>
 					</div>
 					<input
-						class="border-solid border-[1px] md:border-2 border-[#c8c8c8] w-full p-4 rounded-lg outline-none focus:border-[#be7f79] focus:bg-[#ffe8e6] focus:text-[#d78683]"
+						class="border-solid border-[1px] sm:border-2 border-[#c8c8c8] w-full p-4 rounded-lg outline-none focus:border-[#be7f79] focus:bg-[#ffe8e6] focus:text-[#d78683]"
 						type="email"
-						id="email"
+						id="email1"
 						required
 						placeholder="email@company.com"
 					/>
 					<button
-						class="bg-[#232742] text-[#fcffff] w-full p-4 rounded-lg md:hover:bg-gradient-to-r from-[#fe5278] to-[#ff693e] md:hover:shadow-2xl md:hover:shadow-[#ff693e]"
+						class="bg-[#232742] text-[#fcffff] w-full p-4 rounded-lg sm:hover:bg-gradient-to-r from-[#fe5278] to-[#ff693e] sm:hover:shadow-2xl sm:hover:shadow-[#ff693e]"
 						type="submit"
 						id="btn"
 					>
@@ -110,24 +116,19 @@
 			</div>
 		</main>
 
-		<!-- Sign-up form end -->
-
-		<!-- Success message start -->
-
-		<!-- Thanks for subscribing! A confirmation email has been sent to
-		ash@loremcompany.com. Please open it and click the button inside to confirm
-		your subscription. Dismiss message -->
-
-		<!-- Success message end -->
-
-		<!-- <div class="attribution">
+		<!-- attribution -->
+		<div
+			class="attribution flex absolute justify-center items-center bg-white h-8 w-1/5 bottom-0"
+		>
 			Challenge by
+			<pre></pre>
 			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
-		</div> -->
-		<!-- <script src="./script.js"></script> -->
-		<script></script>
+				>Frontend Mentor </a
+			>. Coded by
+			<pre></pre>
+			<a href="#">Anshul</a>.
+		</div>
+
+		<script src="./script.js"></script>
 	</body>
 </html>
-

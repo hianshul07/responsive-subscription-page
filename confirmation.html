@@ -6,33 +6,59 @@
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script src="./tailwind.config.js"></script>
 		<title>Confirmation</title>
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+
+			#warning {
+				display: none;
+			}
+		</style>
 	</head>
 	<body
-		class="flex md:justify-center md:items-center md:bg-[#36384d] h-[100vh]"
+		class="flex sm:justify-center sm:items-center sm:bg-[#36384d] h-[100vh]"
 	>
 		<main
-			class="flex flex-col justify-between items-center p-6 md:gap-8 bg-white md:m-0 md:h-3/5 md:w-3/6 md:p-14 md:rounded-3xl"
+			class="flex flex-col justify-between items-center p-6 sm:gap-8 bg-white sm:m-0 sm:h-3/5 sm:w-3/6 sm:p-14 sm:rounded-3xl"
 		>
 			<ul
-				class="h-2/5 flex flex-col justify-evenly mt-28 md:mt-0 md:h-full md:gap-4"
+				class="h-2/5 flex flex-col justify-evenly mt-28 sm:mt-0 sm:h-full sm:gap-4"
 			>
 				<li><img src="./assets/images/icon-success.svg" alt="" /></li>
 				<li class="text-[#232742] text-4xl font-bold">
 					Thanks for <br />
 					subscribing!
 				</li>
-				<li class="text-[#232742] md:text-base">
+				<li class="text-[#232742] sm:text-base">
 					A confirmation email has been sent to
 					<strong>ash@loremcompany.com</strong>. Please open it and click the
 					button inside to confirm your subscription
 				</li>
 			</ul>
 			<button
-				class="bg-[#232742] text-[#fcffff] w-full p-4 rounded-lg hover:bg-gradient-to-r from-[#fe5278] to-[#ff693e] hover:shadow-2xl md:hover:shadow-[#ff693e]"
+				id="btn"
+				onclick="nextPage()"
+				class="bg-[#232742] text-[#fcffff] w-full p-4 rounded-lg hover:bg-gradient-to-r from-[#fe5278] to-[#ff693e] hover:shadow-2xl sm:hover:shadow-[#ff693e]"
 			>
 				Dismiss message
 			</button>
 		</main>
+		<div
+			class="attribution flex absolute justify-center items-center bg-white h-8 w-1/5 bottom-0"
+		>
+			Challenge by
+			<pre> </pre>
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor </a
+			>. Coded by
+			<pre> </pre>
+			<a href="#">Anshul</a>.
+		</div>
+		<script src="./script.js"></script>
 	</body>
 </html>
-
