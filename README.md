@@ -29,11 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Default Page](./output-ss/default-state.png){width="300px"}
+![Default Page](./output-ss/default-state.png)
 ![Default Page](./output-ss/invalid-email.png)
 ![Default Page](./output-ss/button-hover-state.png)
 ![Default Page](./output-ss/Confirmation.png)
-![Default Page](./output-ss/default-mobile-state.png)
+<img src="./output-ss/default-mobile-state.png" alt="" width=400px>
+![Default Page](.)
 ![Default Page](./output-ss/invalid-email-mobile.png)
 ![Default Page](./output-ss/confirmation-mobile.png)
 
