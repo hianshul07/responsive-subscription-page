@@ -11,8 +11,6 @@ This is a solution to the [Newsletter sign-up form with success message challeng
   - [Built with](#built-with)
 - [Author](#author)
 
-
-
 ## Overview
 
 ### The challenge
